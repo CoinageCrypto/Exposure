@@ -7,6 +7,7 @@ contract ExposureCrowdSale is Ownable {
     using SafeMath for uint256;
 
     // The address of the token contract which we'll be interacting with.
+    // This cannot be changed after deployment.
     ExposureToken public exposure;
 
     // Amount of Exposure you get for every 1 ETH
