@@ -6,3 +6,4 @@
 [[redirects]]
   from = "/*"
   to = "https://coina.ge"
+  force = true
