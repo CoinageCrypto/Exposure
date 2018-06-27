@@ -2,3 +2,7 @@
   base    = "website"
   publish = "website"
   command = "yarn build"
+
+[[redirects]]
+  from = "*"
+  to = "https://coina.ge"
