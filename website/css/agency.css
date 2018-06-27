@@ -13,15 +13,15 @@ p {
 }
 
 a {
-  color: #fed136;
+  color: #48e5c2;
 }
 
 a:hover {
-  color: #fec503;
+  color: #1fdbb1;
 }
 
 .text-primary {
-  color: #fed136 !important;
+  color: #48e5c2 !important;
 }
 
 h1,
@@ -78,13 +78,13 @@ section h3.section-subheading-without-margin {
 }
 
 .btn-primary {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #48e5c2;
+  border-color: #48e5c2;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #fec810 !important;
-  border-color: #fec810 !important;
+  background-color: #27e0b7 !important;
+  border-color: #27e0b7 !important;
   color: white;
 }
 
@@ -93,12 +93,12 @@ section h3.section-subheading-without-margin {
 }
 
 ::-moz-selection {
-  background: #fed136;
+  background: #48e5c2;
   text-shadow: none;
 }
 
 ::selection {
-  background: #fed136;
+  background: #48e5c2;
   text-shadow: none;
 }
 
@@ -121,17 +121,17 @@ img::-moz-selection {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: #fed136;
+  background-color: #48e5c2;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-brand {
-  color: #fed136;
+  color: #48e5c2;
   font-family: "Pacifico", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #fec503;
+  color: #1fdbb1;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -144,7 +144,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #fed136;
+  color: #48e5c2;
 }
 
 @media (min-width: 992px) {
@@ -224,7 +224,7 @@ header.masthead .intro-text .intro-heading {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
   header.masthead .intro-text .intro-heading {
-    color: #fed136;
+    color: #48e5c2;
     font-size: 75px;
     font-weight: 700;
     line-height: 75px;
@@ -303,5 +303,5 @@ ul.social-buttons li a {
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-  background-color: #fed136;
+  background-color: #48e5c2;
 }
