@@ -73,6 +73,10 @@ contract ExposureCrowdSale is Ownable {
         emit FundsWalletChanged(fundsWallet);
     }
 
+    // -----------------------------
+    // OTHER OWNER PRIVILEGES
+    // -----------------------------
+
     /**
     * @dev The owner is able to withdraw any Exposure the contract has.
     */
@@ -99,6 +103,10 @@ contract ExposureCrowdSale is Ownable {
 
         // Send the Exposure to the purchaser.
         exposure.transfer(msg.sender, amountPurchased);
+
+        // Update our status variables.
+        exposureSold = exposureSold.add(amountPurchased);
+        ethCollected = ethCollected.add(msg.value);
 
         // Note: No emits here because we're expecting you to watch the transfer events on the
         //       token contract if you want to see when people purchase.
