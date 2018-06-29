@@ -84,7 +84,7 @@
           <h2 class="section-heading text-uppercase">About Exposure</h2>
         </div>
       </div>
-      <div class="row text-center">
+      <div class="row text-center mt-3">
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
@@ -109,6 +109,13 @@
           <h4 class="service-heading mt-3">Trustless</h4>
           <p class="text-muted">Exposure operates without trusted third parties. Your money, your choices. Until you give it to us. Then it's our money, our choices.</p>
         </div>
+      </div>
+      <hr />
+      <div class="text-center mt-5">
+        <h3>Price</h3>
+        <p class="text-muted mt-4">We all know that Exposure is worth absolutely nothing, but if you want to buy it from us right now it costs</p>
+        <h4 id="price"></h4>
+        <p class="text-muted">Think of the Exposure!</p>
       </div>
     </div>
   </section>
@@ -240,9 +247,11 @@
                 <li>Send ETH to our smart contract:</li>
                 <button class="btn btn-primary btn-xl m-3">Send transaction with Metamask now</button>
                 <li class="mb-3">Add the token to Metamask so you can see how much Exposure you have.</li>
-                Token Contract Address: 
-                Token Symbol: EXPO
-                Decimals of Precision: 18
+                <p>
+                  Token Contract Address: 
+                  Token Symbol: EXPO
+                  Decimals of Precision: 18
+                </p>
               </ol>
             </div>
 
@@ -308,7 +317,7 @@
         Do you have a whitepaper?
       </div>
       <div class="answer">
-        Not yet. We're hoping someone will do it for the Exposure. 50,000 Exposure to be exact. I'd write a really picky job posting about needing to have at least 70 years worth of experience with cryptocurrencies, have a PHD, etc, but that'd take effort. Just assume I did that to save us all time and <a href="mailto:hello@coina.ge">apply here with your proposed whitepaper attached</a> and we'll see what we can do.
+        Not yet. We're hoping someone will do it for the Exposure. 50,000 Exposure to be exact. I'd write a really picky job posting about needing to have at least 70 years worth of experience with cryptocurrencies, minimum education level of PhD, etc, but that'd take effort. Just assume I did that to save us all time and <a href="mailto:hello@coina.ge">apply here with your proposed whitepaper attached</a> and we'll see what we can do.
       </div>
       <div class="question">
         Can I get a refund?
@@ -386,10 +395,15 @@
               </a>
             </li>
             <li class="list-inline-item">
-                <a href="mailto:hello@coina.ge" target="blank" rel="noopener noreferrer">
-                  <i class="far fa-envelope"></i>
-                </a>
-              </li>
+              <a href="https://github.com/CoinageCrypto/Exposure" target="blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="mailto:hello@coina.ge" target="blank" rel="noopener noreferrer">
+                <i class="far fa-envelope"></i>
+              </a>
+            </li>
           </ul>
         </div>
         <div class="col-md-4">
@@ -418,13 +432,27 @@
 
   <!-- Facebook -->
   <div id="fb-root"></div>
-  <script>(function (d, s, id) {
+  <script>
+    (function (d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s); js.id = id;
       js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.0&appId=387600611746485 ';
       fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk '));</script>
+    }(document, 'script', 'facebook-jssdk '));
+  </script>
+
+  <!-- Exchange API to Determine value of Exposure -->
+  <script>
+    $(document).ready(() => {
+      $.ajax('https://api.gdax.com/products/ETH-USD/ticker')
+        .done(result => {
+          const exposurePrice = result.price / 1337; // This rate is a variable in the smart contract.
+
+          $('#price').text(`~ $${exposurePrice.toFixed(2)} USD`);
+        })
+    });
+  </script>
 </body>
 
 </html>
