@@ -22,6 +22,17 @@ contract ExposureCrowdSale is Crowdsale, Ownable {
     }
 
     /**
+    * @dev Allows the owner to change the funds wallet address
+    * @param _wallet The new funds wallet address
+    */
+    function updateWallet(address _wallet)
+        onlyOwner
+        external
+    {
+        wallet = _wallet;
+    }
+
+    /**
     * @dev Allows the owner to change the exchange rate
     * @param _rate The new rate of the crowdsale
     */
