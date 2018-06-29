@@ -14,5 +14,6 @@ contract ExposureToken is StandardBurnableToken {
         
         // Owner starts with all of the Exposure.
         balances[msg.sender] = totalSupply_;
+        emit Transfer(0, msg.sender, totalSupply_);
     }
 }
