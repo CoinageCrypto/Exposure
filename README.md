@@ -2,8 +2,8 @@
 
 The cryptocurrency for creative professionals.
 
-![GitHub release](https://img.shields.io/github/release/CoinageCrypto/solidifier.svg)
-![License](https://img.shields.io/github/license/CoinageCrypto/solidifier.svg)
+![GitHub release](https://img.shields.io/github/release/CoinageCrypto/Exposure.svg)
+![License](https://img.shields.io/github/license/CoinageCrypto/Exposure.svg)
 [![Supported by Coinage](https://coina.ge/assets/supported-by-coinage-badge.svg)](https://coina.ge/?utm_source=github&utm_medium=badge&utm_campaign=exposure)
 
 ## Contents
