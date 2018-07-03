@@ -134,6 +134,7 @@
         <h3>Price</h3>
         <p class="text-muted mt-4">We all know that Exposure is worth absolutely nothing, but if you want to buy it from us right now it costs</p>
         <h4 id="price"></h4>
+        <p id="exchange-rate" class="text-muted"></p>
         <p class="text-muted">Think of the Exposure!</p>
       </div>
     </div>
@@ -171,53 +172,55 @@
         </div>
         <div class="row justify-content-around mt-5">
           <div class="col-md-4 text-center">
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-bullhorn fa-stack-1x fa-inverse"></i>
-            </span>
+            <a href="https://goo.gl/forms/nZTOSSobA0DR621I3">
+              <span class="fa-stack fa-4x">
+                <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                <i class="fas fa-bullhorn fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
             <h4 class="service-heading mt-3">Bounty Program</h4>
             <p class="text-muted">Earn Exposure by giving us exposure. Help this project by blogging about us, or posting about us on your social media account(s) then <a href="https://goo.gl/forms/nZTOSSobA0DR621I3">submit your claim for Exposure here</a>.
             </p>
           </div>
 
           <div class="col-md-4 text-center">
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fab fa-ethereum fa-stack-1x fa-inverse"></i>
-            </span>
+            <a href="https://www.myetherwallet.com/?to=0xB7D9372DbcEDfFd7b58a15516e0b156204b764a8&value=1#send-transaction" target="_blank" rel="noopener noreferrer" class="hidden-link">
+              <span class="fa-stack fa-4x">
+                <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                <i class="fab fa-ethereum fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
             <h4 class="service-heading mt-3">Ether</h4>
             <p class="text-muted">Alternatively we're happy to take Ether and give you Exposure back.</p>
           </div>
         </div>
-        <div class="col-lg-12 mt-5">
-          <div class="row justify-content-around mt-2">
-            <div class="col-md-4 text-center">
+
+        <div class="row justify-content-around mt-5">
+          <div class="col-md-4 mt-2 text-center">
+            <a class="col-md-4 text-center justify-content-center metamask-button">
               <img src="img/logos/metamask-fox.svg" alt="Metamask" width="200" />
-            </div>
+            </a>
+            <h4 class="service-heading mt-3">Metamask</h4>
+            <p class="text-muted">Metamask is the recommended way to purchase and manage your Exposure if you're new to cryptocurrency, Ethereum or ERC20 tokens.</p>
+          </div>
 
-            <div class="col-md-4 text-center">
+          <div class="col-md-4 mt-2 text-center">
+            <a class="col-md-4 text-center justify-content-center" href="https://www.myetherwallet.com/?to=0xB7D9372DbcEDfFd7b58a15516e0b156204b764a8&value=1#send-transaction" target="_blank" rel="noopener noreferrer">
               <img src="img/logos/myetherwallet.png" alt="My Ether Wallet" width="160" class="mt-1" />
-            </div>
+            </a>
+            <h4 class="service-heading mt-4">My Ether Wallet (MEW)</h4>
+            <p class="text-muted">My Ether Wallet will let you manage exposure that's stored on your hardware wallet, such as a
+              <a href="https://www.ledgerwallet.com/products/ledger-nano-s" target="blank" rel="noopener noreferrer">Ledger Nano S</a>, or a
+              <a href="https://trezor.io/" target="blank" rel="noopener noreferrer">Trezor</a>. If you're comfortable with Ethereum / ERC20 tokens, we recommend this method.</p>
           </div>
-          <div class="row justify-content-around mt-2">
-            <div class="col-md-4 text-center">
-              <h4 class="service-heading">Metamask</h4>
-              <p class="text-muted">Metamask is the recommended way to purchase and manage your Exposure if you're new to cryptocurrency, Ethereum or ERC20 tokens.</p>
-            </div>
-            <div class="col-md-4 text-center">
-              <h4 class="service-heading">My Ether Wallet (MEW)</h4>
-              <p class="text-muted">My Ether Wallet will let you manage exposure that's stored on your hardware wallet, such as a
-                <a href="https://www.ledgerwallet.com/products/ledger-nano-s" target="blank" rel="noopener noreferrer">Ledger Nano S</a>, or a
-                <a href="https://trezor.io/" target="blank" rel="noopener noreferrer">Trezor</a>. If you're comfortable with Ethereum / ERC20 tokens, we recommend this method.</p>
-            </div>
-            <div class="row mt-3">
-              <p class="text-muted">You
-                <strong>must</strong> do this from a wallet you control, not one that is held by an exchange, or you will
-                <strong>LOSE ALL OF YOUR EXPOSURE</strong>. We are not a bank and will not be able to help you recover your lost Exposure.
-              </p>
-            </div>
+        </div>
 
-          </div>
+        <div class="row mt-3 col">
+          <p class="text-muted">You
+            <strong>must</strong> do this from a wallet you control, not one that is held by an exchange, or you will
+            <strong>LOSE ALL OF YOUR EXPOSURE</strong>. We are not a bank and will not be able to help you recover your lost Exposure.
+          </p>
+        </div>
 
           <div class="container">
             <div class="row m-5">
@@ -264,10 +267,10 @@
 
                 </div>
                 <li>Send ETH to our smart contract:</li>
-                <button class="btn btn-primary btn-xl m-3">Send transaction with Metamask now</button>
+                <button class="btn btn-primary btn-xl m-3 metamask-button">Send transaction with Metamask now</button>
                 <li class="mb-3">Add the token to Metamask so you can see how much Exposure you have.</li>
                 <p>
-                  Token Contract Address: 
+                  Token Contract Address: 0xf79C2cc623c9317725712cF1b1b980464507a70A
                   Token Symbol: EXPO
                   Decimals of Precision: 18
                 </p>
@@ -280,9 +283,10 @@
               </div>
             </div>
             <div class="row justify-content-center m-3">
-              <a href="" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-xl">Send transaction with My Ether Wallet now</a>
+              <a href="https://www.myetherwallet.com/?to=0xB7D9372DbcEDfFd7b58a15516e0b156204b764a8&value=1#send-transaction" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-xl">Send transaction with My Ether Wallet now</a>
             </div>
           </div>
+        </div>
 
           <!-- Exchanges -->
           <div class="row mt-5">
@@ -292,7 +296,7 @@
           </div>
           <div class="row justify-content-around mt-5">
             <div class="col-md-3 col-sm-6">
-              <a href="" target="blank" rel="noopener noreferrer">
+              <a href="https://etherdelta.com/#0xf79c2cc623c9317725712cf1b1b980464507a70a-ETH" target="blank" rel="noopener noreferrer">
                 <img class="img-fluid d-block mx-auto" src="img/logos/ether-delta.png" alt="">
               </a>
             </div>
@@ -474,12 +478,33 @@
   <!-- Exchange API to Determine value of Exposure -->
   <script>
     $(document).ready(() => {
+      const exchangeRate = 1337;
+
       $.ajax('https://api.gdax.com/products/ETH-USD/ticker')
         .done(result => {
-          const exposurePrice = result.price / 1337; // This rate is a variable in the smart contract.
+          const exposurePrice = result.price / exchangeRate; // This rate is a variable in the smart contract.
 
           $('#price').text(`~ $${exposurePrice.toFixed(2)} USD`);
+          $('#exchange-rate').text(`(1 ETH = ${exchangeRate} EXPO)`);
         })
+    });
+  </script>
+
+  <!-- Metamask integration -->
+  <script>
+    $(document).ready(() => {
+      $('.metamask-button').on('click', () => {
+        if (typeof web3 === 'undefined') {
+          alert('Please install and unlock Metamask before trying to send a transaction.');
+          return;
+        }
+        const value = prompt('How many ETH would you like to send?', '1');
+
+        web3.eth.sendTransaction({
+          to: '0xB7D9372DbcEDfFd7b58a15516e0b156204b764a8',
+          value,
+        });
+      });
     });
   </script>
 </body>
