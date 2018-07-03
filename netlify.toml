@@ -3,6 +3,10 @@
   publish = "website"
   command = "yarn build"
 
+[[redirects]]
+  from = "/bounty*"
+  to = "https://docs.google.com/forms/d/e/1FAIpQLSdiLEriPCRQ7-KXZA9AsI9yZWUSqDQO0xOxkT0DYKRLDcEJOA/viewform"
+
 [[headers]]
   for = "/*"
   [headers.values]
