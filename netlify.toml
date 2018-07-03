@@ -3,11 +3,6 @@
   publish = "website"
   command = "yarn build"
 
-[[redirects]]
-  from = "/*"
-  to = "https://coina.ge"
-  force = true
-
 [[headers]]
   for = "/*"
   [headers.values]
