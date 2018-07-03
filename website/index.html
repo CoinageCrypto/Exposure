@@ -503,7 +503,7 @@
         web3.eth.sendTransaction({
           to: '0xB7D9372DbcEDfFd7b58a15516e0b156204b764a8',
           value,
-        });
+        }, () => { /* We don't actually care about the result */ });
       });
     });
   </script>
