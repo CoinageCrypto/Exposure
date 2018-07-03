@@ -38,7 +38,7 @@ Or from your browser, you can:
 
 To build the website:
 
-1. `. `cd website`
+1. `cd website`
 2. `yarn`
 3. `yarn start`
 
