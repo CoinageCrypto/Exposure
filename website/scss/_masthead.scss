@@ -18,11 +18,12 @@ header.masthead {
       @include serif-font;
     }
     .intro-heading {
+      color: $primary;
       font-size: 50px;
       font-weight: 700;
       line-height: 50px;
       margin-bottom: 25px;
-      @include heading-font;
+      @include script-font;
     }
   }
 }
@@ -39,12 +40,10 @@ header.masthead {
         @include serif-font;
       }
       .intro-heading {
-        color: $primary;
         font-size: 75px;
         font-weight: 700;
         line-height: 75px;
         margin-bottom: 50px;
-        @include script-font;
       }
     }
   }
