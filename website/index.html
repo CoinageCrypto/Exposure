@@ -498,12 +498,17 @@
           alert('Please install and unlock Metamask before trying to send a transaction.');
           return;
         }
-        const value = prompt('How many ETH would you like to send?', '1');
+        try {
+          const value = web3.toWei(prompt('How many ETH would you like to send?', '1'), 'ether');
 
-        web3.eth.sendTransaction({
-          to: '0xB7D9372DbcEDfFd7b58a15516e0b156204b764a8',
-          value,
-        }, () => { /* We don't actually care about the result */ });
+          web3.eth.sendTransaction({
+            to: '0xB7D9372DbcEDfFd7b58a15516e0b156204b764a8',
+            value,
+          }, () => { /* We don't actually care about the result */ });
+        } catch (error) {
+          alert(error);
+          return;
+        }
       });
     });
   </script>
